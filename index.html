@@ -1,30 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
-</head>
-<body>
-  <main id="main-doc">
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <main id="main-doc">
     <nav id="navbar">
-      <header><h2>JS Documentation</h2></header>
-      <a href="#Introduction" class="nav-link">Introduction</a>
-      <a href="#What_you_should_already_know" class="nav-link">What you should already know</a>
-      <a href="#JavaScript_and_Java" class="nav-link">JavaScript and Java</a>
-      <a href="#Hello_world" class="nav-link">Hello world</a>
-      <a href="#Variables" class="nav-link">Variables</a>
-      <a href="#Declaring_variables" class="nav-link">Declaring variables</a>
-      <a href="#Variable_scope" class="nav-link">Variable scope</a>
-      <a href="#Global_variables" class="nav-link">Global variables</a>
-      <a href="#Constants" class="nav-link">Constants</a>
-      <a href="#Data_types" class="nav-link">Data types</a>
-      <a href="#if...else_statement" class="nav-link">if...else statement</a>
-      <a href="#while_statement" class="nav-link">while statement</a>
-      <a href="#Function_declarations" class="nav-link">Function declarations</a>
-      <a href="#Reference" class="nav-link">Reference</a>
+      <header><h2>Technical-Documentation-Page-Project</h2></header>
+        <ul> 
+          <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+          <li><a href="#What_you_should_already_know" class="nav-link">What you should already know</a></li>
+          <li><a href="#JavaScript_and_Java" class="nav-link">JavaScript and Java</a></li>
+          <li><a href="#Hello_world" class="nav-link">Hello world</a></li>
+          <li><a href="#Variables" class="nav-link">Variables</a></li>
+          <li><a href="#Declaring_variables" class="nav-link">Declaring variables</a></li>
+          <li><a href="#Variable_scope" class="nav-link">Variable scope</a></li>
+          <li><a href="#Global_variables" class="nav-link">Global variables</a></li>
+          <li><a href="#Constants" class="nav-link">Constants</a></li>
+          <li><a href="#Data_types" class="nav-link">Data types</a></li>
+          <li><a href="#if...else_statement" class="nav-link">if...else statement</a></li>
+          <li><a href="#while_statement" class="nav-link">while statement</a></li>
+          <li><a href="#Function_declarations" class="nav-link">Function declarations</a></li>
+          <li><a href="#Reference" class="nav-link">Reference</a></li>
+        </ul> 
     </nav>
     
     <section class="main-section" id="Introduction">
@@ -54,7 +56,7 @@
     <section class="main-section" id="Hello_world">
       <header>Hello world</header>    
       <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
-      <code>function greetMe(yourName) { alert("Hello " + yourName); }
+      <code>function greetMe(yourName) { alert("Hello " + yourName); } <br><br>
   greetMe("World");</code>
       <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
     </section>    
@@ -83,7 +85,7 @@
       <p>JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within. For example the following code will log 5, because the scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement.</p>
       <code>if (true) { var x = 5; } console.log(x); // 5</code>
       <p>This behavior changes, when using the let declaration introduced in ECMAScript 2015</p>
-      <code>if (true) { let y = 5; } console.log(y); // ReferenceError: y is not
+      <code>if (true) { let y = 5; } console.log(y); // ReferenceError: y is not<br><br>
   defined</code>
     </section>   
     <section class="main-section" id="Global_variables">
@@ -98,7 +100,7 @@
       <p>A constant cannot change value through assignment or be re-declared while the script is running. It has to be initialized to a value.</p>
       <p>The scope rules for constants are the same as those for let block scope variables. If the const keyword is omitted, the identifier is assumed to represent a variable.</p>
       <p>You cannot declare a constant with the same name as a function or variable in the same scope. For example:</p>
-      <code>// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS WILL
+      <code>// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS WILL<br><br>
   CAUSE AN ERROR ALSO function f() { const g = 5; var g; //statements
   }</code>
       <p>However, object attributes are not protected, so the following statement is executed without problems.</p>
@@ -108,13 +110,16 @@
       <header>Data types</header>    
       <p>The latest ECMAScript standard defines seven data types:</p>
       <ul>
-        <li>Six data types that are primitives:</li>
-          <li>Boolean. true and false.</li>
-          <li>null. A special keyword denoting a null value. Because JavaScript is case-sensitive, null is not the same as Null, NULL, or any other variant.</li>
-          <li>undefined. A top-level property whose value is undefined.</li>
-          <li>Number. 42 or 3.14159.</li>
-          <li>String. "Howdy"</li>
-          <li>Symbol (new in ECMAScript 2015). A data type whose instances are unique and immutable.</li>
+        <li>Six data types that are primitives:
+            <ul>
+              <li>Boolean. true and false.</li>
+              <li>null. A special keyword denoting a null value. Because JavaScript is case-sensitive, 
+              null is not the same as Null, NULL, or any other variant.</li>
+              <li>undefined. A top-level property whose value is undefined.</li>
+              <li>Number. 42 or 3.14159.</li>
+              <li>String. "Howdy"</li>
+              <li>Symbol (new in ECMAScript 2015). A data type whose instances are unique and immutable.</li>
+            </ul>
         <li>and Object</li>
       </ul>
       <p>Although these data types are a relatively small amount, they enable you to perform useful functions with your applications. Objects and functions are the other fundamental elements in the language. You can think of objects as named containers for values, and functions as procedures that your application can perform.</p>
@@ -125,12 +130,12 @@
       <code>if (condition) { statement_1; } else { statement_2; }</code>
       <p>condition can be any expression that evaluates to true or false. See Boolean for an explanation of what evaluates to true and false. If condition evaluates to true, statement_1 is executed; otherwise, statement_2 is executed. statement_1 and statement_2 can be any statement, including further nested if statements.</p>
       <p>You may also compound the statements using else if to have multiple conditions tested in sequence, as follows:</p>
-      <code>if (condition_1) { statement_1; } else if (condition_2) { statement_2;
+      <code>if (condition_1) { statement_1; } else if (condition_2) { statement_2;<br><br>
   } else if (condition_n) { statement_n; } else { statement_last; }</code>
       <p>In the case of multiple conditions only the first logical condition which evaluates to true will be executed. To execute multiple statements, group them within a block statement ({ ... }) . In general, it's good practice to always use block statements, especially when nesting if statements:</p>
-      <code>if (condition) { statement_1_runs_if_condition_is_true;
-  statement_2_runs_if_condition_is_true; } else {
-  statement_3_runs_if_condition_is_false;
+      <code>if (condition) { statement_1_runs_if_condition_is_true;<br><br>
+  statement_2_runs_if_condition_is_true; } else {<br><br>
+  statement_3_runs_if_condition_is_false;<br><br>
   statement_4_runs_if_condition_is_false; }</code>
       <p>It is advisable to not use simple assignments in a conditional expression, because the assignment can be confused with equality when glancing over the code. For example, do not use the following code:</p>
       <code>if (x = y) { /* statements here */ }</code>
@@ -175,6 +180,8 @@
         <li>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">MDN</li>
       </ul>
     </section>   
-  </main>  
+  </main>
 </body>
 </html>
+
+
